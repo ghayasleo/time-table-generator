@@ -2,10 +2,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Combo {
-    List<Teacher> teachers = new ArrayList<>();
-    List<Class> classes = new ArrayList<>();
+    List<Teacher> teachers;
+    List<Class> classes;
 
     Combo() {
+        teachers = new ArrayList<>();
+        classes = new ArrayList<>();
+
+        this.createCombination();
+    }
+
+    private void createCombination() {
         Subject english = new Subject("English", 3);
 
         Subject pfTheory = new Subject("Programming Theory", 3);
@@ -28,10 +35,10 @@ public class Combo {
         Class dataScience2B = new Class("Data Science", "B", 2);
         Class dataScience1A = new Class("Data Science", "A", 1);
         Class dataScience1B = new Class("Data Science", "B", 1);
+        this.classes.add(dataScience1A);
+        this.classes.add(dataScience1B);
         this.classes.add(dataScience2A);
         this.classes.add(dataScience2B);
-        this.classes.add(dataScience1B);
-        this.classes.add(dataScience1A);
 
         this.teachers.add(new Teacher("Sikandar Tangi"));
         this.teachers.get(getIdx()).addCourse(pakStudies, dataScience1A);

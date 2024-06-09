@@ -73,10 +73,6 @@ public class TimeTableGenerator {
         return timeTables;
     }
 
-    public List<Teacher> getTeachers() {
-        return teachers;
-    }
-
     public int getMaxLetters() {
         return maxLetters;
     }

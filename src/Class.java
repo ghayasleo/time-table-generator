@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Class {
-    private String program;
-    private String group;
-    private int semester;
-    private ArrayList<Subject> subjects = new ArrayList<>();
+    private final String program;
+    private final String group;
+    private final int semester;
+    private final ArrayList<Subject> subjects; // not used
 
     private final String[][] timeTable = new String[5][4];
 
@@ -12,22 +12,15 @@ public class Class {
         this.program = program;
         this.group = group;
         this.semester = semester;
+        this.subjects = new ArrayList<>();
     }
 
     public String getProgram() {
         return program;
     }
 
-    public void setProgram(String program) {
-        this.program = program;
-    }
-
     public String getGroup() {
         return group;
-    }
-
-    public void setGroup(String group) {
-        this.group = group;
     }
 
     public String[][] getTimeTable() {
@@ -40,14 +33,6 @@ public class Class {
 
     public int getSemester() {
         return semester;
-    }
-
-    public void setSemester(int semester) {
-        this.semester = semester;
-    }
-
-    public ArrayList<Subject> getSubjects() {
-        return subjects;
     }
 
     public void addSubject(Subject subject) {

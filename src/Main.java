@@ -10,7 +10,7 @@ public class Main {
 
         for (String[][] classes : timeTables) {
             Class _class = timeTableGenerator.getClasses().get(idx);
-            System.out.println(_class.getProgram() + " Group " + _class.getGroup() + " Semester " + _class.getSemester());
+            System.out.println(_class.getProgram() + " Semester " + _class.getSemester() + " Group " + _class.getGroup());
             for (String[] days : classes) {
                 for (String teacher : days) {
                     StringBuilder letters = new StringBuilder(teacher == null ? "." : teacher);

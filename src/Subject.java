@@ -11,12 +11,14 @@ public class Subject {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getCreditHours() {
         return creditHours;
+    }
+
+    // Unused functions
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setCreditHours(int creditHours) {

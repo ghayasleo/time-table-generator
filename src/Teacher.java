@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Teacher {
-    private String name;
+    private final String name;
     private final List<Map<String, Object>> courses = new ArrayList<>();
 
     private final String[][] timeTable = new String[5][4];
@@ -15,10 +15,6 @@ public class Teacher {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void addCourse(Subject subject, Class _class) {
