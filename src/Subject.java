@@ -1,6 +1,6 @@
 public class Subject {
-    private String name;
-    private int creditHours;
+    private final String name;
+    private final int creditHours;
 
     Subject(String name, int creditHours) {
         this.name = name;
@@ -13,15 +13,5 @@ public class Subject {
 
     public int getCreditHours() {
         return creditHours;
-    }
-
-    // Unused functions
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setCreditHours(int creditHours) {
-        this.creditHours = creditHours;
     }
 }
